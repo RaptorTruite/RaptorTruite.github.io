@@ -40,7 +40,7 @@ color: white;
     justify-content: space-evenly;
     flex-direction: column;
     align-content: center;
-    text-align: center;
+    align-items: center;
 
     width: 80%;
 }
