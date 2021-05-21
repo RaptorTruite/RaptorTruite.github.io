@@ -1,0 +1,296 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.landing{
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.headBar{
+    height: 15%;
+
+    background-color: red;
+}
+
+.landingBackground{
+    height: 85%;
+
+    background-image: url(Images/wallpaper.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.landingContent{
+    height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landingTitle{
+    width: 100%;
+    background-color: gray;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landingTitle>h1{
+    color: white;
+}
+
+.stat>h1{
+    font-size: 5em;
+}
+
+.headBarContent{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headBarContent>form{
+    width: 50%;
+}
+
+.headBarContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+
+    background-image: url(Images/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 75px;
+    width: 100px;
+}
+
+.landingPics{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ads{
+
+    width: 100px;
+    height: 100px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pic1{
+    background-image: url(Images/mcdo.jpg);
+}
+
+.pic2{
+    background-image: url(Images/coca.png);
+}
+
+.pic3{
+    background-image: url(Images/voiture.jpg);
+}
+
+.landingContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.annonceHeading{
+    padding-top: 1em;
+}
+
+.listAnnonce{
+    min-height: 100vh;
+
+    background-color: white;
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col-3{
+    margin: 15px 5px   ;
+}
+
+.statistiques{
+    min-height: 100vh;
+    background-color: lightgray;
+}
+
+.statContainer{
+    padding-top: 30px;
+}
+
+.stat{
+    height: 400px;
+
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.progressBar{
+    height: 15px;
+
+    background-color: white;
+}
+
+.progressValue{
+    height: 100%;
+    width: 80%;
+
+    background-color: aqua;
+}
+
+.statText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.marketing{
+    min-height: 100vh;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.marketingContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.marketingContainer>div{
+    padding-top: 50px;
+}
+
+.marketingQuote{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.quotesContainer{
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    justify-content: center;
+}
+
+.quoteLine{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.quoteLine>p{
+    width: 50%;
+}
+
+.quoteImg{
+    float: left;
+
+    width: 50%;
+    height: 150px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pic4{
+    background-image: url(Images/monsanto.png);
+}
+
+.pic5{
+    background-image: url(Images/edf.png);
+}
+
+.socialNetwork{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.network{
+    height: 100px;
+    width: 100px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pic6{
+    background-image: url(Images/facebook.png);
+}
+
+.pic7{
+    background-image: url(Images/instagram.png);
+}
+
+.pic8{
+    background-image: url(Images/twitter.png);
+}
+
+.pic9{
+    background-image: url(Images/pinterest.png);
+}
