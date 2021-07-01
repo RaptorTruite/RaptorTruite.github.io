@@ -7,19 +7,36 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
-h3, h4{
+h3, h4, a{
     color: white;
+}
+
+.button{
+    text-decoration: none;
+    background-color: red;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.1em;
 }
 
 .centered{
     position: fixed;
+    top: 2%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
 .left{
     position: fixed;
-    left: 10%;
+    top: 2%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+}
+
+.right{
+    position: fixed;
+    top: 5%;
+    right: 3%;
     transform: translate(-50%,-50%);
 }
 
@@ -40,12 +57,11 @@ h3, h4{
     position: sticky;
     top: 0%;  
 
+    height: 10vh;
+
     background-color: black;
 
     z-index: 1;
-    
-    display: flex;
-    align-items: center;
 }
 
 
@@ -64,7 +80,7 @@ h3, h4{
     height: 75vh;
     width: 80%;
 
-    border-radius:  0 0 10px 10px;
+    border-radius: 10px;
 
     background-image: url(img/placeholder.jpg);
     background-position: center;
@@ -131,7 +147,7 @@ p{
     }
 }
 
-@media (max-width : 800px) {
+@media (max-width : 800px){
 
     .topBar h3{
         font-size: 1.25em;
@@ -143,3 +159,20 @@ p{
     }
     
 }
+
+@media (max-width : 1100px)
+{
+    .button{
+        font-size: 0;
+        padding: 0px;
+        height: 35px;
+        width: 35px;
+
+        background-color: black;
+        background-image: url(../img/left_arrow.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
