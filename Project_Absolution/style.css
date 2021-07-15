@@ -242,6 +242,14 @@ h3, h4, a{
 
     .carousel{
         flex-direction: column;
+        flex-wrap: nowrap;
     }
+
+     .carouselItem{
+        width: 50%;
+        height: 100%;
+
+        margin: 10px 0;
+    } 
 }
 
