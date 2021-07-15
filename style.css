@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
+}
+h3, h4, a{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button{
+    text-decoration: none;
+    background-color: red;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+.centered{
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.left{
+    position: fixed;
+    top: 2%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+}
+
+.topBar h3{
+    font-size: 1.75em;
+}
+
+.topBar h4{
+    font-size: 1.25em;
+    width: fit-content;
+}
+
+.section{
+    padding: 20px 0;
+}
+
+.landingPage{
+    height: 100vh;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.topBar{
+    position: sticky;
+    top: 0%;  
+
+    height: 10vh;
+
+    background-color: black;
+}
+
+.landingContent{
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.lb1{
+    flex: 10;
+    background-image: url(img/Title_GD.png);
+    background-position: left;
+}
+
+.lb2{
+    flex: 10;
+    background-image: url(img/Title_Dev.png);
+    background-position: right;
+}
+
+.lbSlash{
+    flex: 1;
+    background-image: url(img/Title_Slash.png);
+    background-size: contain;   
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.landingBackground{
+    width: 50vw;
+    background-size: cover;   
+    background-repeat: no-repeat; 
+
+    transition: background-size, 0.5s ease;
+}
+
+.landingBackground:hover{
+    flex: 250;
+}
+
+.aboutPage{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutContent{
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+
+    color: white;
+    background-color: #2C4251;
+    border-radius: 10px;
+}
+
+.aboutDetails{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutDetailsItem{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+
+    padding: 15px 0;
+}
+
+.icon{
+    height:100px;
+    width: 100px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    padding: 0 10px;
+}
+
+.i1{
+    background-image: url(./img/Icon/Csharp_Color.png);
+}
+
+.i2{
+    background-image: url(./img/Icon/unity_icon.png);
+}
+
+.i3{
+    background-image: url(./img/Icon/Html_Color.png);
+}
+
+.i4{
+    background-image: url(./img/Icon/Css3_Color.png);
+}
+
+.i5{
+    background-image: url(./img/Icon/JavaScript_Color.png);
+}
+
+.i6{
+    background-image: url(./img/Icon/java.png);
+}
+
+.i7{
+    background-image: url(./img/Icon/PHP.png);
+}
+
+.projectPage{
+    min-height: 100vh;
+    background-color: #2C4251;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectContainer{
+    width: 75%;
+    height: 100%;
+
+    padding: 20px 0 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projectItem{
+    padding-bottom: 15px;
+
+    background-color: white;
+    height: 100%;
+    width: 25%;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+}
+
+.projectImg{
+    background-image: url(img/placeholder.jpg);
+
+    width: 100%;
+    height: 175px;
+
+    border-radius: 10px 10px 0 0;
+  
+    background-repeat: no-repeat; 
+    background-position: center;
+
+    color: white;
+}
+
+.img1{
+    background-image: url(Project_Absolution/img/Title.jpg);
+    background-size: cover; 
+}
+
+.img2{
+    background-image: url(Project_Basile/img/Titre.png);
+    background-size: contain; 
+}
+
+.img3{
+    background-image: url(Project_Blossom/img/Titre.png);
+    background-size: contain; 
+}
+
+.projectDetails{
+    padding: 10px;  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projectButton{
+    width: 30px;
+    height: 30px;
+
+    color: white;
+    font-size: 1.2em;
+    
+    background-color: red;
+
+    border-radius: 30px;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    min-width: fit-content;
+
+    cursor: pointer;
+}
+
+.projectButton:hover{
+    padding: 0 10px;
+}
+
+.formPage{
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgba(230,100,101,1) 0%, rgba(145,152,229,1) 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer{
+    width: 50%;
+    height: 75%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+form{
+    width: 50%;
+    padding-top: 1px;
+}
+
+form .verticalItem{
+    height: 75px;
+    padding-bottom: 1.2em;
+}
+
+form div{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+
+label{
+    font-size: 1.1em;
+    padding-bottom: 5px;
+}
+
+button{
+    padding: 10px 5px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: red;
+    color: white;
+    font-size: 1.2em;
+}
+
+input{
+    padding: 5px 0;
+}
+
+@media (max-width : 800px) 
+{
+    .topBar h3{
+        font-size: 1.25em;
+        margin-left: 50px;
+    }
+    
+    .topBar h4{
+        font-size: 1em;
+    }
+
+    .projectContainer{
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+
+    .projectItem{
+        width: 75%;
+        margin: 20px 0;
+    }
+
+    h2{
+        font-size: 0.90em;
+    }
+
+    .icon{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 1000px){
+
+    .lb1, .lb2, .lbSlash{
+        background-image: none;
+    }
+
+    .landingContent{
+        background-image: url(img/Titre_mobile.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
