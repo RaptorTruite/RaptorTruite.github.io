@@ -41,7 +41,7 @@ if (pics.length > 0)
         {
             let style = pics[i].currentStyle || window.getComputedStyle(pics[i], false);
             let bgImg = style.backgroundImage;
-            let url = bgImg.substring(13, bgImg.length - 1);
+            let url = bgImg.substring(4, bgImg.length - 1);
             console.log(url);
 
             modal.style.display = "block";
