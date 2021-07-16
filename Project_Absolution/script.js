@@ -45,7 +45,7 @@ if (pics.length > 0)
             console.log(url);
 
             modal.style.display = "block";
-            modalPic.style.backgroundImage = url;
+            modalPic.style.backgroundImage = "url(" + url + ")";
         });
     }
 }
