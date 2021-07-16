@@ -240,6 +240,7 @@ a{
 
 .img1{
     background-image: url(Project_Absolution/img/Title.jpg);
+    background-position: left;
     background-size: cover; 
 }
 
