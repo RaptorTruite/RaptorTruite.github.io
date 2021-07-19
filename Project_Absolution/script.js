@@ -31,6 +31,7 @@ function Carousel(element)
 }
 
 let modal = document.getElementById("modal");
+modal.style.display = "none";
 let pics = document.getElementsByClassName("carouselItem");
 let modalPic = document.getElementById("img");     
 

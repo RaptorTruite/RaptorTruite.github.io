@@ -1,4 +1,4 @@
-let imgSources = ["img/Titre.png"];
+let imgSources = ["img/Titre.png", "img/Stage1.png", "img/Stage2.png"];
 let backgroundImg = document.getElementsByClassName("background");
 let index = 0;
 backgroundImg[0].style.backgroundImage = "url(" + imgSources[index] + ")";
@@ -29,3 +29,27 @@ function Carousel (element)
 
     },10000);    
 }
+
+let modal = document.getElementById("modal");
+modal.style.display = "none";
+let pics = document.getElementsByClassName("carouselItem");
+let modalPic = document.getElementById("img");     
+
+if (pics.length > 0)
+{
+    for (let i = 0; i < pics.length; i++) {
+        pics[i].addEventListener("click", () => 
+        {
+            let style = pics[i].currentStyle || window.getComputedStyle(pics[i], false);
+            let bgImg = style.backgroundImage;
+            let url = bgImg.substring(4, bgImg.length - 1);
+            console.log(url);
+
+            modal.style.display = "block";
+            modalPic.style.backgroundImage = "url(" + url + ")";
+        });
+    }
+}
+
+let span = document.getElementsByClassName("close")[0];
+span.onclick = ()=> {modal.style.display = "none"; modalPic.style.backgroundImage = "none";}
