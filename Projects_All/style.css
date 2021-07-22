@@ -18,7 +18,7 @@ a{
 .button{
     text-decoration: none;
     background-color: red;
-    padding: 5px;
+    padding: 5px 7px;
     border-radius: 10px;
     font-size: 1.1em;
 }
@@ -128,7 +128,6 @@ a{
 
     .topBar h3{
         font-size: 1.25em;
-        margin-left: 50px;
     }
     
     .topBar h4{
