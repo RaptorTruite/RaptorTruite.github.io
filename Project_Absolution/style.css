@@ -11,6 +11,10 @@ h3, h4, a{
     color: white;
 }
 
+a{
+    text-decoration: none;
+}
+
 .button{
     text-decoration: none;
     background-color: red;
@@ -301,7 +305,7 @@ h3, h4, a{
     }
     
     .projectDetails > div > p{
-        font-size: 0.75em;
+        font-size: 0.7em;
     }
 }
 
