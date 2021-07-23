@@ -404,6 +404,14 @@ input{
         width: 35px;
         height: 35px;
     }
+
+    button, label{
+        font-size: 0.75em;
+    }
+
+    form{
+        width: 90%;
+    }
 }
 
 @media (max-width: 1000px){
