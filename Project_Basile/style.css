@@ -272,7 +272,7 @@ a{
 @media (max-width : 800px){
 
     .topBar h3{
-        font-size: 1.25em;
+        font-size: 1em;
     }
     
     .topBar h4{
@@ -280,11 +280,11 @@ a{
     }
 
     .left{
-        left: 15%;
+        left: 17%;
     }
     
     .right{
-        right: 0%;
+        right: 5%;
     }
     
     .centered, .left, .right{
