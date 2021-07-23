@@ -124,12 +124,15 @@ a{
 
 .projectDetails > div, .extraDetails > div{
     background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     padding: 10px 5px 0;
     margin: 10px 0;
 }
 
+.projectDetails > div p{
+    text-align: center;
+}
 .extraDetails > div{
-    border-radius: 10px;
     width: 100%
 }
 
@@ -289,6 +292,10 @@ a{
         transform: translate(-50%,-50%);
     }
 
+    .projectDetails > div{
+        border-radius: 0px;
+    }
+    
     .projectDetails > div > p{
         font-size: 0.7em;
     }
