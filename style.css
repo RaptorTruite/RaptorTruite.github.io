@@ -155,9 +155,15 @@ a{
     flex-direction: row;
     align-items: center;
     justify-content:flex-start;
-    flex-wrap: wrap;
 
     padding: 15px 0;
+}
+
+.iconList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .icon{
@@ -396,8 +402,8 @@ input{
     }
 
     .icon{
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
     }
 }
 
