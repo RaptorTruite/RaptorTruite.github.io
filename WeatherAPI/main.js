@@ -11,7 +11,10 @@ const weatherToken = "3bbf695264b23a6499e061fea31460f8";
 const metricSystem = "units=metric";
 
 //-- IPStack Info --//
-const stackToken = "0b42b17fedf977386a0c223e54a930c2"
+const stackToken = "0b42b17fedf977386a0c223e54a930c2";
+
+//-- IPGeo Info --//
+const geoToken = "d969ef7e069943658ee98687757484c2";
 
 validationBtn.addEventListener("click", () => {
     getWeather(locationInput.value);
@@ -84,6 +87,7 @@ function detectUserIP(){
     request.onload = () => {
         if (request.status === 200){
             ip = request.responseText;
+            console.log(ip)
             detectUserPosition(ip);
         }
     }
@@ -95,7 +99,7 @@ function detectUserPosition(ip){
 
     const request = new XMLHttpRequest();
 
-    request.open("GET", `http://api.ipstack.com/${ip}?access_key=${stackToken}`);
+    request.open("GET", `https://api.ipgeolocation.io/ipgeo?apiKey=${geoToken}&ip=${ip}`);
     
     request.onload = () => {
         if (request.status === 200){
