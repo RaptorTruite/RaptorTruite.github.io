@@ -95,7 +95,7 @@ function detectUserPosition(ip){
 
     const request = new XMLHttpRequest();
 
-    request.open("GET", `https://api.ipstack.com/${ip}?access_key=${stackToken}`);
+    request.open("GET", `http://api.ipstack.com/${ip}?access_key=${stackToken}`);
     
     request.onload = () => {
         if (request.status === 200){
