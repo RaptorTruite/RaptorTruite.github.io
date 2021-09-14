@@ -84,7 +84,6 @@ function detectUserIP(){
     request.onload = () => {
         if (request.status === 200){
             ip = request.responseText;
-            console.log(ip)
             detectUserPosition(ip);
         }
     }
