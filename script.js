@@ -1,18 +1,18 @@
-let projectButton = document.getElementsByClassName("projectButton");
+let projectButtons = document.querySelectorAll(".projectButton");
 let index = 0;
 let interval = null;
 
-let title = document.querySelector(".title");
-let section = document.getElementsByClassName("section");
+const title = document.querySelector(".title");
+const sections = document.querySelectorAll(".section");
 let previousSection = -1;
 
-if (projectButton.length > 0)
+if (projectButtons.length > 0)
 {
-    for(let i = 0; i < projectButton.length; i++)
+    for(let i = 0; i < projectButtons.length; i++)
     {
-        projectButton[i].offsetWidth = projectButton[i].children.offsetWidth;
+        projectButtons[i].offsetWidth = projectButtons[i].children.offsetWidth;
 
-        projectButton[i].addEventListener("click", () => 
+        projectButtons[i].addEventListener("click", () => 
         {
             switch(i)
             {
@@ -39,14 +39,14 @@ if (projectButton.length > 0)
             
         });
 
-        projectButton[i].addEventListener("mouseover", () =>
+        projectButtons[i].addEventListener("mouseover", () =>
         {
-            ChangeText(projectButton[i], "en savoir plus");
+            ChangeText(projectButtons[i], "en savoir plus");
         });
         
-        projectButton[i].addEventListener("mouseleave", () =>
+        projectButtons[i].addEventListener("mouseleave", () =>
         {
-            projectButton[i].textContent = "+";
+            projectButtons[i].textContent = "+";
             clearTimeout(interval);
             index = 0;
         });
@@ -70,9 +70,9 @@ function ChangeText(buttonText, targetWord, speed = 25)
 
 document.addEventListener("scroll", () =>
 {
-    for (let index = 0; index < section.length; index++) 
+    for (let index = 0; index < sections.length; index++) 
 {
-    if(isInViewport(section[index]))
+    if(isInViewport(sections[index]))
     {
         switch (index)
         {

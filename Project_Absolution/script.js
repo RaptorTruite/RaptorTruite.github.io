@@ -1,12 +1,9 @@
-let imgSources = ["img/Title.jpg", "img/Absolution_01.PNG"];
-let backgroundImg = document.getElementsByClassName("background");
+const imgSources = ["img/Title.jpg", "img/Absolution_01.PNG"];
+const backgroundImg = document.querySelector(".background");
 let index = 0;
-backgroundImg[0].style.backgroundImage = "url(" + imgSources[index] + ")";
+backgroundImg.style.backgroundImage = "url(" + imgSources[index] + ")";
 
-if (backgroundImg.length > 0 && imgSources.length > 1)
-{
-    Carousel(backgroundImg[0]);
-}
+Carousel(backgroundImg);
 
 function Carousel(element)
 {
@@ -30,10 +27,10 @@ function Carousel(element)
     },10000);    
 }
 
-let modal = document.getElementById("modal");
+const modal = document.querySelector("#modal");
 modal.style.display = "none";
-let pics = document.getElementsByClassName("carouselItem");
-let modalPic = document.getElementById("img");     
+const pics = document.querySelectorAll(".carouselItem");
+const modalPic = document.querySelector("#img");     
 
 if (pics.length > 0)
 {
@@ -51,6 +48,9 @@ if (pics.length > 0)
     }
 }
 
-let span = document.getElementsByClassName("close")[0];
-span.onclick = ()=> {modal.style.display = "none"; modalPic.style.backgroundImage = "none";}
+const span = document.querySelector(".close");
+span.onclick = ()=> {
+    modal.style.display = "none"; 
+    modalPic.style.backgroundImage = "none";
+}
 

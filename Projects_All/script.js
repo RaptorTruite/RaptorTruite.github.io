@@ -1,4 +1,4 @@
-let projectAnchor = document.getElementsByClassName("project");
+const projectAnchor = document.querySelectorAll(".project");
 
 for (let i = 0; i < projectAnchor.length; i++)
 {
